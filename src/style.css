@@ -1,0 +1,22 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: Inter, sans-serif;
+}
+
+header {
+	background-color: #f55a5a;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	gap: 7px;
+	font-size: 14.5px;
+	letter-spacing: -0.075em;
+}
+
+header > img {
+	width: 24px;
+}
