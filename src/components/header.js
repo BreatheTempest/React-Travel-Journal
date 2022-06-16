@@ -1,4 +1,4 @@
-import img from '../images/Fill 213.png';
+import img from '../images/earth.png';
 
 export default function Header() {
 	return (

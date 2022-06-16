@@ -1,12 +1,13 @@
 * {
 	box-sizing: border-box;
+	margin: 0;
 }
 body {
-	margin: 0;
 	font-family: Inter, sans-serif;
 }
 
 header {
+	width: 100%;
 	background-color: #f55a5a;
 	display: flex;
 	align-items: center;
@@ -15,6 +16,69 @@ header {
 	gap: 7px;
 	font-size: 14.5px;
 	letter-spacing: -0.075em;
+	height: 55px;
+	margin-bottom: 45px;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.card {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 470px;
+	margin: 36px;
+	color: #2b283a;
+}
+
+.info {
+	margin-left: 19px;
+}
+
+.top {
+	display: flex;
+	align-items: center;
+}
+
+.top > img {
+	margin-right: 4px;
+	width: 7px;
+}
+
+.location {
+	font-weight: 400;
+	font-size: 10.24px;
+	line-height: 12px;
+	letter-spacing: 0.17em;
+}
+
+.map {
+	margin-left: 12px;
+	font-weight: 400;
+	font-size: 10.24px;
+	line-height: 12px;
+	text-decoration-line: underline;
+
+	color: #918e9b;
+}
+
+.info > h1 {
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 30px;
+	margin-top: 4px;
+}
+
+.date {
+	font-weight: 700;
+	font-size: 10.24px;
+	line-height: 12px;
+	margin-top: 7px;
 }
 
 header > img {
@@ -23,4 +87,14 @@ header > img {
 
 .card > img {
 	width: 125px;
+	height: 168px;
+	object-fit: cover;
+	border-radius: 5px;
+}
+
+.description {
+	font-weight: 400;
+	font-size: 10.24px;
+	line-height: 150%;
+	margin-top: 9px;
 }

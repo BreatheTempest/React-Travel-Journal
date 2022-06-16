@@ -1,17 +1,21 @@
-import img from '../images/Path.png';
+import img from '../images/location-icon.png';
 
 export default function Card(props) {
-	// console.log(props[0].title);
 	return (
 		<div className="card">
 			<img src={props.imageUrl} alt="" />
 			<div className="info">
-				<img src={img} alt="" />
-				<p>{props.location}</p>
-				<a href={props.googleMapsUrl}>View on Google Maps</a>
+				<div className="top">
+					<img src={img} alt="" />
+					<p className="location">{props.location}</p>
+					<a href={props.googleMapsUrl} className="map">
+						View on Google Maps
+					</a>
+				</div>
 				<h1>{props.title}</h1>
 				<div className="date">
-					<span className="startDate">{props.startDate}</span>-
+					<span className="startDate">{props.startDate}</span>
+					<span> - </span>
 					<span className="endDate">{props.endDate}</span>
 				</div>
 				<p className="description">{props.description}</p>
@@ -19,15 +23,3 @@ export default function Card(props) {
 		</div>
 	);
 }
-
-// {
-//   title: 'Mount Fuji',
-//   location: 'Japan',
-//   googleMapsUrl: 'https://goo.gl/maps/1DGM5WrWnATgkSNB8',
-//   startDate: '12 Jan, 2021',
-//   endDate: '24 Jan, 2021',
-//   description:
-//     'Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet). Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists.',
-//   imageUrl:
-//     'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-// },
