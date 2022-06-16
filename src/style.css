@@ -20,3 +20,7 @@ header {
 header > img {
 	width: 24px;
 }
+
+.card > img {
+	width: 125px;
+}
